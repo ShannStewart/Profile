@@ -1,0 +1,183 @@
+html, body{
+  height: 100%;
+}
+
+@media screen and (max-width: 750px){
+  .sidenav {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 750px){
+  .sidenav{
+  background-image: linear-gradient(White, lightgrey);
+  height: 100%;
+  width: 30%;
+  position: fixed; 
+  z-index: 1; 
+  top: 0; 
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5%;
+}
+
+.sidenav img:hover{
+  transform: scale(1.2);
+}
+
+.sidenav p{
+  color: #035F0B;
+}
+
+.sidenav a{
+  color: #035F0B;
+}
+
+.sidenav a:hover{
+  cursor: pointer;
+  color: black;
+  transform: scale(1.4);
+}
+
+.sidenav::cue{
+  color: #035F0B;
+}
+
+.sidenav img{
+  height: 120px;
+  width: auto;
+}
+
+.name{
+  display: flex;
+  font-size: 25px;
+  flex-basis: 1;
+  flex-wrap: nowrap;
+}
+
+.contactInfo{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+}
+
+@media screen and (max-width: 750px){
+    .topnav{
+        background-image: linear-gradient(White, lightgrey);
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 20%;
+        width: 100%;
+        position: fixed;
+        top: 0; 
+        padding: 5%;
+    }
+
+    .topnav p{
+        color: #035F0B;
+        font-size: 30px;
+      }
+      
+      .topnav a{
+        color: #035F0B;
+        font-size: 20px;
+      }
+
+    .contactInfo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 750px){
+    .topnav{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 750px){
+  main{
+    background-image: linear-gradient(#020101, #2C2F34);
+    margin-top: 25%;
+    min-height: 80%; 
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5%;
+  }
+}
+
+@media screen and (min-width: 750px){
+main{
+  background-image: linear-gradient(#020101, #2C2F34);
+  min-height: 100%; 
+  width: 70%;
+  margin-left:30%;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5%;
+}
+}
+
+.projects{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+  padding: 5%;
+  top: 0;
+}
+
+.projects div{
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  flex-grow: 1;
+  padding: 10%;
+  height: 20%;
+}
+
+.projects img{
+  width: 200px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.projects img:hover{
+  transform: scale(1.3);
+}
+
+.projects p{
+  color: white;
+  font-size: 20px;
+}
+
+.projects a{
+  color: white;
+}
+
+.projects a:hover{
+  cursor: pointer;
+  color: #035F0B;
+}
+
+.projects div:after{
+  width:100%; 
+  height:1px;
+  background: #035F0B; }
+}
+
