@@ -1,5 +1,5 @@
 html, body{
-  height: 100%;
+  overflow-x: hidden;
 }
 
 @media screen and (max-width: 750px){
@@ -116,7 +116,7 @@ html, body{
 main{
     background-color: lightgray;
   min-height: 100%; 
-  width: 70%;
+  width: 60%;
   margin-left:30%;
   top: 0;
   right: 0;
