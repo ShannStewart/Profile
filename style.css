@@ -1,4 +1,8 @@
 html, body{
+  height: 100%;
+}
+
+body {
   overflow-x: hidden;
 }
 
@@ -10,7 +14,7 @@ html, body{
 
 @media screen and (min-width: 750px){
   .sidenav{
-  background-color: white;
+  background-image: linear-gradient(White, lightgrey);
   height: 100%;
   width: 30%;
   position: fixed; 
@@ -28,12 +32,23 @@ html, body{
   transform: scale(1.2);
 }
 
+.sidenav p{
+  color: #035F0B;
+}
+
+.sidenav a{
+  color: #035F0B;
+}
+
 .sidenav a:hover{
   cursor: pointer;
-  color: blue;
+  color: black;
   transform: scale(1.4);
 }
 
+.sidenav::cue{
+  color: #035F0B;
+}
 
 .sidenav img{
   height: 120px;
@@ -57,7 +72,7 @@ html, body{
 
 @media screen and (max-width: 750px){
     .topnav{
-        background-color: white;
+        background-image: linear-gradient(White, lightgrey);
         display: flex;
         flex: 1;
         flex-direction: column;
@@ -68,21 +83,16 @@ html, body{
         position: fixed;
         top: 0; 
         padding: 5%;
-        
     }
 
     .topnav p{
-        font-size: 25px;
-        padding: 0;
-        display: flex;
-        flex: 1;
-        
+        color: #035F0B;
+        font-size: 30px;
       }
       
       .topnav a{
+        color: #035F0B;
         font-size: 20px;
-        display: flex;
-        flex: 1;
       }
 
     .contactInfo{
@@ -101,8 +111,8 @@ html, body{
 
 @media screen and (max-width: 750px){
   main{
-    background-color: lightgray;
-    margin-top: 35%;
+    background-image: linear-gradient(#020101, #2C2F34);
+    margin-top: 25%;
     min-height: 80%; 
     width: 100%;
     display: flex;
@@ -114,9 +124,9 @@ html, body{
 
 @media screen and (min-width: 750px){
 main{
-    background-color: lightgray;
+  background-image: linear-gradient(#020101, #2C2F34);
   min-height: 100%; 
-  width: 60%;
+  width: 70%;
   margin-left:30%;
   top: 0;
   right: 0;
@@ -125,9 +135,6 @@ main{
   justify-content: center;
   padding: 5%;
 }
-.projects img:hover{
-    transform: scale(1.3);
-  } 
 }
 
 .projects{
@@ -144,8 +151,8 @@ main{
   flex-direction: column;
   justify-content: left;
   flex-grow: 1;
-  padding: 5%;
-  padding-left: 12%;
+  padding: 10%;
+  height: 20%;
 }
 
 .projects img{
@@ -154,21 +161,27 @@ main{
   margin-bottom: 20px;
 }
 
+.projects img:hover{
+  transform: scale(1.3);
+}
 
 .projects p{
+  color: white;
   font-size: 20px;
 }
 
+.projects a{
+  color: white;
+}
 
 .projects a:hover{
   cursor: pointer;
-  color: blue;
+  color: #035F0B;
 }
 
 .projects div:after{
   width:100%; 
   height:1px;
-  background: blue;
-}
+  background: #035F0B; }
 }
 
