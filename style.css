@@ -19,7 +19,7 @@ p {
   
   @media screen and (min-width: 750px){
     .tiny{
-      display: none;
+      display: none !important;
     }
   }
 
